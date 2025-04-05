@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Sahil Al-Attar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        div {
+            width: 100%;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            div {
+                width: 33.33%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+</head>
+
+<body id="mainbody">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // AOS.init();
+        const elem = document.getElementById("mainbody");
+            for (i = 1; i <= 13; i++) {
+                elem.innerHTML += `
+<div data-aos="fade-left" data-aos-duration="4000">
+	<img src="./IMG${i}.jpg" />
+</div>`;
+            }
+
+
+
+        elem.innerHTML += `
+<div style="background:rgb(255, 242, 227);width:100%;padding:5px;font-weight: bold; text-align: center;">
+Experience luxury with Sahil Al-Attar, where tradition meets modern elegance. Our carefully crafted perfumes and attars are designed to leave a lasting impression, blending the finest ingredients for a truly unique fragrance experience.
+For orders and inquiries, contact us:
+<br />
+<br />
+<a href="tel:+917096920620">
+📞 +917096920620
+</a>
+<br />
+<br />
+<a href="mailto:sahilkhalifa60000@gmail.com">
+	Email: sahilkhalifa60000@gmail.com
+</a>
+</div>
+`;
+    </script>
+</body>
+
+</html>
